@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AjouterController">
+    <children>
+        <VBox alignment="CENTER" prefWidth="880.0" spacing="10.0" style="-fx-background-color: rgb(50, 50, 50);">
+            <children>
+                <Label fx:id="ajouterOffreNumber" text="Ajouter un offre" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="80.0">
+                    <children>
+                        <VBox maxHeight="-Infinity">
+                            <children>
+                        <ChoiceBox fx:id="categorie" prefHeight="44.0" prefWidth="224.0" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                            <children>
+                        <TextField fx:id="marque" promptText="Marque" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Cmarque" text="* Saisi une marque valide" textFill="#ff2a2a" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity">
+                            <children>
+                        <TextField fx:id="modele" promptText="Modéle" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Cmodele" text="* Saisi un modèle valide" textFill="#ff2a2a" />
+                            </children>
+                        </VBox>
+                    </children></HBox>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="705.0" spacing="80.0">
+                    <children>
+                        <VBox maxHeight="-Infinity">
+                            <children>
+                        <ChoiceBox fx:id="carburant" prefHeight="44.0" prefWidth="224.0" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity">
+                            <children>
+                        <TextField fx:id="prix" promptText="Prix ($)" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Cprix" text="* Saisi un prix valide" textFill="#ff2a2a" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="465.0" layoutY="10.0" maxHeight="-Infinity">
+                            <children>
+                        <TextField fx:id="km" promptText="Kilomitrage (Km)" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Ckm" text="* Saisi un Km valide" textFill="#ff2a2a" />
+                            </children>
+                        </VBox>
+                    </children></HBox>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="125.0" prefHeight="50.0" prefWidth="705.0" spacing="80.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity">
+                     <children>
+                        <TextField fx:id="sortie" promptText="Année de sortie" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Csortie" text="* Saisi une date  (AAAA)" textFill="#ff2a2a" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity">
+                     <children>
+                        <TextField fx:id="couleur" promptText="Couleur" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Ccouleur" text="* Saisi une couleur valide" textFill="#ff2a2a" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="465.0" layoutY="10.0" maxHeight="-Infinity">
+                     <children>
+                        <TextField fx:id="moteur" promptText="Moteur" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Cmoteur" text="* Saisi un moteur valide" textFill="#ff2a2a" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="705.0" spacing="80.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity">
+                     <children>
+                        <TextField fx:id="moteurPuissance" promptText="Puissance Moteur" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="CpuissanceMoteur" text="* Saisi une puissance valide (ex. 44 CV)" textFill="#ff2a2a" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity">
+                     <children>
+                        <TextField fx:id="garanti" promptText="Garantie (ex. 3 mois)" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Cgaranti" text="* Saisi une garanti valide" textFill="#ff2a2a" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="480.0" layoutY="10.0" maxHeight="-Infinity">
+                     <children>
+                        <TextField fx:id="version" promptText="Version" style="-fx-background-color: rgb(120, 120, 120);">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="Cversion" text="* Saisi une version valide" textFill="#ff2a2a" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Hyperlink fx:id="photo" onAction="#importPhoto" text="Ajouter une photo">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label fx:id="Cphoto" text="* Ajouter au moins une photo" textFill="#ff2a2a" />
+               </children>
+            </VBox>
+                <Button mnemonicParsing="false" onAction="#ajouter" style="-fx-background-color: #ff2a2a;" text="Ajouter voiture" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>

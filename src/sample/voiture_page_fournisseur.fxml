@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: rgb(50, 50 ,50);" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label fx:id="marque" alignment="CENTER_LEFT" text="BMW" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label fx:id="numeroSerie" alignment="CENTER_LEFT" text="SERIE 5 E60 M5" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label fx:id="prix" alignment="CENTER_LEFT" text="26 990 $" textFill="#ff2a2a">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="270.0" />
+               </HBox.margin></Label>
+         </children></HBox>
+      <Label fx:id="version" text="M5 5.0 V10 507 BVA (FRANÇAISE)" textFill="#ffffffa3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <HBox prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label fx:id="km" text="148 347 Km" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="date" text=" 2005" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="garanti" text="Garantie 3 mois" textFill="#4fff4a">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children></HBox>
+      <ImageView fx:id="image" fitHeight="429.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BMW.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="10.0" left="5.0" top="10.0" />
+         </VBox.margin></ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Informations générales" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <HBox spacing="20.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="Version :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Catégorie :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="moteur" text="Moteur :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Puissance Fiscale :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Couleur extérieure :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Année :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Kilométrage :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="145.0" text="Carburant :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label fx:id="version2" text="M5 5.0 V10 507 BVA (FRANÇAISE)" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="carburant1" layoutX="10.0" layoutY="172.0" text="Monospace" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="moteur" text="Climatisation automatique" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="puissance" text="44 CV" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="color" text="Bleu" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="date2" text="2005" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="km2" text="148 347 Km" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="carburant" layoutX="10.0" layoutY="145.0" text="Diesel" textFill="#ffffff93">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #ff2a2a;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #ff2a2a;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="retour" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #ff2a2a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="35.0" right="35.0" top="10.0" />
+   </padding>
+</VBox>

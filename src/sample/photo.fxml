@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="500.0" spacing="10.0" style="-fx-background-color: rgb(120, 120, 120);;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="500.0" spacing="10.0" style="-fx-background-color: rgb(50, 50, 50);">
+         <children>
+            <Label text="Ce service vous est proposé par " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Ahmed Auto" textFill="#00988e">
+               <font>
+                  <Font name="Radnika Medium" size="26.0" />
+               </font></Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Label text="Attention" textFill="#ff3535">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label text="Le fichier importé n'est pas un fichier photo" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Label>
+   </children>
+</VBox>

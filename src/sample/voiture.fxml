@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="433.0" spacing="5.0" style="-fx-background-color: rgb(50, 50, 50);" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="image" fitHeight="312.0" fitWidth="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BMW.jpg" />
+         </image></ImageView>
+      <VBox>
+         <children>
+            <HBox spacing="15.0">
+               <children>
+                  <Label fx:id="marque" text="BMW ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="model" text="SERIE 3 F30">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="numero" text="(F30) 318D 143 EXECUTIVE" textFill="#4fff4ab2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label fx:id="carburant" cache="true" text="Diesel" textFill="#ff2a2a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="color" cache="true" text="Bleu" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <HBox alignment="TOP_RIGHT" cache="true" spacing="10.0">
+               <children>
+                  <Label fx:id="date" text="2012" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="km" text="10000 Km" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="prix" text="11 900 $" textFill="#ff2b2b">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </HBox>
+         </children></HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

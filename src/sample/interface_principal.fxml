@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane id="root2" fx:id="mainScrollPane" fitToWidth="true" pannable="true" stylesheets="@style.css" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+   
+       <VBox fx:id="mainVBox" alignment="TOP_CENTER" minHeight="-Infinity" prefWidth="1530.0">
+           <children>
+               <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="-Infinity" spacing="10.0" style="-fx-background-color: rgb(50, 50 ,50);">
+                   <children>
+                       <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                               <Image url="@../icon.png" />
+                           </image>
+                  </ImageView>
+                  <Label layoutX="457.0" layoutY="20.0" text="Ahmed Auto" textAlignment="CENTER" textFill="#00988e">
+                     <font>
+                        <Font name="Radnika Medium" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="15.0" text="©" textAlignment="CENTER" textFill="#00988e">
+                     <font>
+                        <Font name="Radnika Medium" size="12.0" />
+                     </font>
+                  </Label>
+                       <Label text="Entreprise de vente des voitures" textAlignment="CENTER" textFill="#dadada">
+                           <font>
+                               <Font name="Arial" size="20.0" />
+                           </font>
+                  </Label>
+                  <Label layoutX="770.0" layoutY="26.0" text="10 Rue des Frères OUDEK, El-Harrach 16200" textAlignment="CENTER" textFill="#dadada">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="achat" fx:id="achat" alignment="CENTER" opacity="1" text="A c h a t" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label id="achat" fx:id="qualite" alignment="CENTER" opacity="0" text="Q u a l i t é" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label id="achat" fx:id="garanti" alignment="CENTER" layoutX="904.0" layoutY="25.0" opacity="0" text="G a r a n t i" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                   </children>
+                   <padding>
+                       <Insets bottom="5.0" left="20.0" top="5.0" />
+                   </padding>
+                   <VBox.margin>
+                       <Insets />
+                   </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="40.0" spacing="20.0" style="-fx-background-color: rgb(50, 50 ,50);">
+               <children>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label fx:id="sessionTitle" text="Vous êtes connectés avec un compte fournisseur |" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sessionName" text="AMOKRANE Abdennour" textAlignment="CENTER" textFill="#ff2a2a">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Button fx:id="signOut" mnemonicParsing="false" onAction="#signOut" style="-fx-background-color: #ff2a2a;" text="Déconnection">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+               <HBox alignment="CENTER" prefHeight="150.0" spacing="50.0">
+                   <children>
+                       <ImageView fitHeight="463.0" fitWidth="1150.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@../couvert3.png" />
+                     </image>
+                  </ImageView>
+                   </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               </HBox>
+            <HBox fx:id="connectionField" alignment="CENTER" layoutX="10.0" layoutY="66.0" spacing="20.0" style="-fx-background-color: rgb(50, 50, 50);">
+               <children>
+                  <Label text="Vous êtes un fournisseur ? Alors Connectez-vous ici">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#signIn" prefWidth="150.0" style="-fx-background-color: #ff2a2a;" text="Connection">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label text="| Si non inscriez-vous pour pouvoir postuler des offres d'achats">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#signUp" prefWidth="150.0" style="-fx-background-color: #ff2a2a;" text="Inscription">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></HBox>
+            <HBox alignment="TOP_CENTER" prefWidth="1530.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TabPane fx:id="mainTabPane" minHeight="-Infinity" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab fx:id="rechercheTab" text="Rechercher">
+                           <content>
+                              <VBox fx:id="rechercherVbox" alignment="TOP_CENTER" prefWidth="1000.0" style="-fx-background-color: rgb(120, 120, 120);">
+                                 <children>
+                                     <fx:include fx:id="recherche" source="recherche.fxml" />
+                                    <HBox fx:id="firstRow" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                           <fx:include fx:id="voiture11" onMouseClicked="#onVoiture11Clicked" source="voiture.fxml" />
+                                           <fx:include fx:id="voiture12" onMouseClicked="#onVoiture12Clicked" source="voiture.fxml" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="secondRow" alignment="CENTER" layoutX="10.0" layoutY="405.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <fx:include fx:id="voiture21" onMouseClicked="#onVoiture21Clicked" source="voiture.fxml" />
+                                          <fx:include fx:id="voiture22" onMouseClicked="#onVoiture22Clicked" source="voiture.fxml" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="thirdRow" alignment="CENTER" layoutX="10.0" layoutY="875.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <fx:include fx:id="voiture31" onMouseClicked="#onVoiture31Clicked" source="voiture.fxml" />
+                                          <fx:include fx:id="voiture32" onMouseClicked="#onVoiture32Clicked" source="voiture.fxml" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="fourthRow" alignment="CENTER" layoutX="10.0" layoutY="1375.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <fx:include fx:id="voiture41" onMouseClicked="#onVoiture41Clicked" source="voiture.fxml" />
+                                          <fx:include fx:id="voiture42" onMouseClicked="#onVoiture42Clicked" source="voiture.fxml" />
+                                       </children>
+                                    </HBox>
+                                     <fx:include fx:id="voiturePage" source="voiture_page.fxml" />
+                                    <HBox fx:id="pageBar" alignment="TOP_CENTER" prefHeight="25.0" spacing="3.0" style="-fx-background-color: rgb(50, 50, 50);">
+                                       <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: rgb(120, 120, 120);" text="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="488.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #ff2a2a;" text="2">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="510.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #ff2a2a;" text="3">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="533.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #ff2a2a;" text="4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </padding></HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </Tab>
+                        <Tab text="Offres &amp; Actualités">
+
+                            <content>
+                                <VBox alignment="TOP_CENTER" minHeight="-Infinity" prefWidth="1000.0" style="-fx-background-color: rgb(120, 120, 120);">
+                                    <children>
+                                    <Label text="Zoom sur:">
+                                       <font>
+                                          <Font name="System Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                        <HBox fx:id="oFirstRow" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                            <children>
+                                                <fx:include fx:id="voiture1" source="voiture.fxml" />
+                                                <fx:include fx:id="voiture2" source="voiture.fxml" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" top="20.0" />
+                                            </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="oSecondRow" alignment="CENTER" layoutX="10.0" layoutY="88.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <fx:include fx:id="voiture3" source="voiture.fxml" />
+                                          <fx:include fx:id="voiture4" source="voiture.fxml" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="oThirdRow" alignment="CENTER" layoutX="10.0" layoutY="558.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <fx:include fx:id="voiture5" source="voiture.fxml" />
+                                          <fx:include fx:id="voiture6" source="voiture.fxml" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="oFourthRow" alignment="CENTER" layoutX="10.0" layoutY="1028.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <fx:include fx:id="voiture7" source="voiture.fxml" />
+                                          <fx:include fx:id="voiture8" source="voiture.fxml" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" top="20.0" />
+                                    </padding>
+                              </VBox>
+                            </content>
+
+                        </Tab>
+
+                        <Tab fx:id="tabFournisseur" text="Fournisseur">
+                            <content>
+                                <VBox fx:id="fournisseurContainer" alignment="TOP_CENTER" prefWidth="1000.0" style="-fx-background-color: rgb(120, 120, 120);">
+                                    <children>
+                                        <fx:include fx:id="ajouter" source="ajoute.fxml" />
+                                    <Label fx:id="offreFournisseur" style="-fx-background-color: rgb(50, 50, 50);" text="Vos Offres  (0 offres)">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                        <HBox fx:id="firstRowFournisseur" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                            <children>
+                                                <fx:include fx:id="voitureFournisseur11" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                                <fx:include fx:id="voitureFournisseur12" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" top="20.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="secondRowFournisseur" alignment="CENTER" layoutX="10.0" layoutY="405.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                            <children>
+                                                <fx:include fx:id="voitureFournisseur21" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                                <fx:include fx:id="voitureFournisseur22" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="thirdRowFournisseur" alignment="CENTER" layoutX="10.0" layoutY="875.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                            <children>
+                                                <fx:include fx:id="voitureFournisseur31" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                                <fx:include fx:id="voitureFournisseur32" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="fourthRowFournisseur" alignment="CENTER" layoutX="10.0" layoutY="1375.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                            <children>
+                                                <fx:include fx:id="voitureFournisseur41" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                                <fx:include fx:id="voitureFournisseur42" onMouseClicked="#onVoitureFournisseurClicked" source="voiture_fournisseur.fxml" />
+                                            </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                        </HBox>
+                                        <fx:include fx:id="voiturePageFournisseur" source="voiture_page_fournisseur.fxml" />
+                                    <HBox fx:id="pageBar1" alignment="TOP_CENTER" prefHeight="25.0" spacing="5.0" style="-fx-background-color: rgb(50, 50, 50);">
+                                       <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: rgb(120, 120, 120);" text="1">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="488.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #ff2a2a;" text="2">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="510.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #ff2a2a;" text="3">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="533.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #ff2a2a;" text="4">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" top="20.0" />
+                                    </padding>
+                                </VBox>
+                            </content>
+                        </Tab>
+
+
+                        <Tab text="Notre Société">
+
+                            <content>
+                                <VBox minHeight="-Infinity" prefWidth="1000.0" spacing="5.0" style="-fx-background-color: rgb(120, 120, 120);">
+                                    <children>
+                                        <Label text="Qui sommes-nous ?">
+                                            <font>
+                                                <Font size="26.0" />
+                                            </font>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="50.0" />
+                                       </VBox.margin>
+                                        </Label>
+                                    <Label layoutX="396.0" layoutY="30.0" text="Ahmed Auto 10 Rue des Frères OUDEK, El-Harrach 16200 ">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="128.0" layoutY="95.0" text="Ahmed Auto vous propose un large choix de véhicules d'occasion toutes marques et tous budgets, vendus révisés et garantis minimum 3 mois (Extension de garantie possible). " wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="160.0" text="Du choix, des prix ultra compétitifs, de la qualité. " wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="240.0" layoutY="270.0" text="Pour satisfaire votre demande, Option auto sélectionne pour vous plus de 80 voitures d'occasion toutes marques à des prix attractifs issus pour la majorité des concessionnaires de la région." wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="345.0" text="Nous vous offrons la possibilité de reprendre votre véhicule, afin de vous faire bénéficier de prestations de qualité." wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="490.0" text="Notre équipe est à votre disposition pour faciliter votre achat et répondre à vos demandes." wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="300.0" spacing="20.0">
+                                       <children>
+                                          <ImageView fitHeight="208.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../voiture.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="197.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../voiture1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="148.0" fitWidth="255.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../voiture2.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label layoutX="10.0" layoutY="326.0" text="Horaires" wrapText="true">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="378.0" text="Du Lundi au samedi  09h00 à 12h00 - 14h00 à 19h00" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" right="20.0" top="20.0" />
+                                    </padding>
+                              </VBox>
+                            </content>
+
+
+                        </Tab>
+                    </tabs>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TabPane>
+                  <VBox alignment="TOP_CENTER" prefWidth="500.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" prefWidth="500.0" spacing="10.0" style="-fx-background-color: rgb(50, 50 ,50);">
+                           <children>
+                              <Label text="Contact Société">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#adresse" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="Adresse">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                  <graphic>
+                                      <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../room_black_36x36.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#numero" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="Numéro">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                  <graphic>
+                                      <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../phone_android_black_36x36.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#email" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="Email">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mail_outline_black_36x36.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <ImageView fx:id="image" fitHeight="223.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../cabine.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Horaires ">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Du lundi au samedi  09h00 à 12h00 - 14h00 à 19h00" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="20.0" layoutY="10.0" maxHeight="-Infinity" prefWidth="500.0" spacing="10.0" style="-fx-background-color: rgb(50, 50 ,50);">
+                           <padding>
+                              <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Label text="Accès par marque">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#audi" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="AUDI">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#bmw" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="BMW">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#ford" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="FORD">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#kia" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="KIA">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#mercedes" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="MERCEDES">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#renault" prefWidth="300.0" style="-fx-background-color: #ff2a2a;" text="RENAULT">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgb(50, 50, 50);">
+               <children>
+                  <Label text="Tous droits reserves à Ahmed Auto entreprise 2018  © COPYRIGHT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+           </children>
+       </VBox>
+   </content>
+
+
+</ScrollPane>
